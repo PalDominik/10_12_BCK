@@ -8,8 +8,13 @@
     </title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body style=' background-color: <%= hatt %>'>
     <h1><%= title %></h1>
-    Hello EJS!
+    <form method="get">
+        <input type="text" name="title" value="<%=  title %>"><br>
+        Háttérszín:
+        <input type="color" name="bgcolor" value="<%= hatt %>"><br>
+        <button type="submit">Cím Beállitása</button>
+    </form>
 </body>
 </html>
